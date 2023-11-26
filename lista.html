@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="document/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+    <script src="document/jquery.js"></script>
+    <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+
+
+    <title>Orçamento</title>
+</head>
+<body onload="lista()">
+
+     		<!-- menu -->
+             <div class="nav-side-menu">
+                <div class="brand">LOGO</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+              
+                    <div class="menu-list">
+              
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li id="cad_loja">
+                              <a  href="#"><i class="fa fa-solid fa-store"></i> Cad Loja</a>
+                            </li>
+                            <li id="cad_produto">
+                              <a href="#"><i class="fa fa-solid fa-cart-plus"></i> Cad Produto</a>
+                            </li>
+                            <li id="cad_orcamento">
+                              <a href="cad_orcamento.html"><i class=" fa fa-duotone fa-cart-shopping"></i> Cad Orçamento</a>
+                            </li>
+                            
+                            <li  data-toggle="collapse" data-target="#ajuda" class="collapsed">
+                                <a href="#"><i class="fa fa-light fa-clipboard-list"></i> Listas <span class="arrow"><i class="fa fa-angle-down"></i></spam></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="ajuda">
+                                <li><a href="lista.html" id="documentacao"><i class="fa fa-angle-right"></i> Listar</a></li>
+                                <li><a href="#" id="suporte"><i class="fa fa-angle-right"></i> Personalizadas</a></li>
+                            </ul>
+                        </ul>
+                 </div>
+            </div>
+    
+            <!-- paginas -->
+            <div class="main" id="pagina">
+                
+                <div class="container">	
+                    <div class="row">
+                        <div class="col">
+                            <h3>Lista</h3>
+                            <hr />
+                
+                            <div class="row">
+                                <div class="col">
+                                  <table class="table" >
+                                    <thead>
+                                      <tr>
+                                        <th>Loja</th>
+                                        <th>Produto</th>
+                                        <th>Valor</th>
+                                        <th></th>
+                                      </tr>
+                                    </thead >
+                                        
+                                    <tbody id="listaorcamento">
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+
+
+            <div class="modal fade" id="su" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div id="modal_titulo_div">
+                      <h1 class="modal-title fs-5" id="modal_titulo"> Sucesso </h1>
+                    </div>
+                    <div class="modal-body" id="modal_descricao">
+                      Despesa foi cadastrada com Sucesso!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="modal_btn">Voltar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+
+</body>
+</html>
